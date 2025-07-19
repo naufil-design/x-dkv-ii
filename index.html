@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+  <script src="main.js" defer></script>
+  <title>X DKV II - SMKN 7 Jember</title>
+</head>
+<body>
+  <div class="main">
+	<p class="middle">kelas</p>
+	<h1 class="middle title" style="font-size:50pt">X DKV II</h1>
+	<h3 class="middle subtitle">SMKN 7 Jember</h3>
+	<p style="margin-top:100px;margin-inline:5vw">
+  Selamat datang di website resmi kelas <strong>X DKV II</strong>! Di sinilah semua kreativitas, kerja tim, dan semangat berkarya kami bersatu. Dari tugas-tugas desain penuh warna sampai momen seru di kelas, semua terangkum di sini. Yuk, jelajahi karya, kegiatan, dan cerita seru dari para pelajar berbakat yang nggak cuma jago gambar, tapi juga punya visi keren buat masa depan!
+  </p>
+  </div>
+	<div class="container">
+	  <h2 class="middle title" style="font-size:20pt">struktur kelas</h2>
+	  <div class="segment">
+	  <span class="middle h1" width="">
+	    <img src="foto/wali_kelas.png" width="100%"></img>
+	    <h3>wali kelas:<br>Deki Irawan S.Pd.</h3>
+	    </span>
+	    <span class="content middle">
+	      <img class="no-select" src="foto/naufil.png" width="100%"></img>
+	      <h3>ketua kelas:<br>Muhammad Naufil Efendi</h3>
+	      <a class="about-me" href="ketua_kelas.html">tentang saya <i class="icon ion-md-arrow-dropright"></i></a>
+	    </span>
+	    <span class="content middle">
+	      <img class="no-select" src="foto/nafiza.png" width="100%"></img>
+	      <h3>wakil ketua kelas:<br>Nafiza Agustin</h3>
+	      <a class="about-me" href="ketua_kelas.html">tentang saya <i class="icon ion-md-arrow-dropright"></i></a>
+	    </span>
+	    <span class="content middle">
+	      <img class="no-select" src="foto/nadya.png" width="100%"></img>
+	      <h3>bendahara 1:<br>Nadya Eka Ariyanti</h3>
+	      <a class="about-me" href="ketua_kelas.html">tentang saya <i class="icon ion-md-arrow-dropright"></i></a>
+	    </span>
+	    <span class="content middle">
+	      <img class="no-select" src="foto/yuyun.png" width="100%"></img>
+	      <h3>bendahara 2:<br>Yunisa As-Syifa</h3>
+	      <a class="about-me" href="ketua_kelas.html">tentang saya <i class="icon ion-md-arrow-dropright"></i></a>
+	    </span>
+	    <span class="content middle">
+	      <img class="no-select" src="foto/selly.png" width="100%"></img>
+	      <h3>sekretaris 1:<br>Selly Maulida</h3>
+	      <a class="about-me" href="ketua_kelas.html">tentang saya <i class="icon ion-md-arrow-dropright"></i></a>
+	    </span>
+	    <span class="content middle">
+	      <img class="no-select" src="foto/salwa.png" width="100%"></img>
+	      <h3>sekretaris 2:<br>Salwatul Rohmah</h3>
+	      <a class="about-me" href="ketua_kelas.html">tentang saya <i class="icon ion-md-arrow-dropright"></i></a>
+	    </span>
+	  </div>
+	</div>
+	<div class="container" style="position:relative;background-color:#111;">
+	  <p class="subtitle middle" style="margin-bottom:70px;font-size:13pt"><i class="icon ion-md-person"></i> daftar nama anggota kelas</i>
+	  <input type="text" id="search" placeholder="Cari nama..." oninput="filterItems()">
+
+<ul id="list">
+  <li>MUHAMMAD NAUFIL EFENDI</li>
+  <li>MUNAWATI</li>
+  <li>NADYA EKA ARIYANTI</li>
+  <li>NAFIZA AGUSTIN</li>
+  <li>NAILA APRILLIA PUTRI</li>
+  <li>NIRMALA RINDIA PUTRI</li>
+  <li>NUR ABDI HIDAYATULLAH</li>
+  <li>NUR ROHMANIA</li>
+  <li>NURIL INTANIA</li>
+  <li>NURUL SAFIKA</li>
+  <li>RAHMA KAYLA PUTRI</li>
+  <li>RATIH ROSITA PUTRI</li>
+  <li>REDINA NATA NURDIANSHAH</li>
+  <li>REHANA</li>
+  <li>RICI WAHYUDI</li>
+  <li>RICO SUSANTO</li>
+  <li>SALWAATUL ROMHAH</li>
+  <li>SELLY MAULIDA</li>
+  <li>SILATUR ROMHAH</li>
+  <li>SLAMET DWI HIDAYATULLAH</li>
+  <li>SOFIATUS SAFA</li>
+  <li>SYAKINA AINI AZELIA</li>
+  <li>TIARA NUR ALFIA</li>
+  <li>TITA APRILLIA</li>
+  <li>TRINEDIA MELISA</li>
+  <li>VIRRA WIDYA PUTRI</li>
+  <li>YUNI TRIYA ASTUTIK</li>
+  <li>YUNISA AS-SYIFA</li>
+  <li>YUNITA ULFIARIANTI</li>
+  <li>ZASKIA</li>
+</ul>
+	</div>
+	<p class="middle" style="font-size:8pt;margin-top:10px">website ini dibuat oleh Naufil<br>tidak memakai software desain apapun, murni dicoding!</p>
+	
+	
+	
+  <script>
+  function filterItems() {
+    const input = document.getElementById('search').value.toLowerCase();
+    const items = document.querySelectorAll('#list li');
+
+    items.forEach(item => {
+      const text = item.textContent.toLowerCase();
+      item.style.display = text.includes(input) ? '' : 'none';
+    });
+  }
+  </script>
+</body>
+</html>
