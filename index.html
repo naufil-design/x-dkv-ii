@@ -10,13 +10,38 @@
   <title>X DKV II - SMKN 7 Jember</title>
 </head>
 <body>
-  <div class="main">
 	<p class="middle">kelas</p>
 	<h1 class="middle title" style="font-size:50pt">X DKV II</h1>
 	<h3 class="middle subtitle">SMKN 7 Jember</h3>
 	<p style="margin-top:100px;margin-inline:5vw">
-  Selamat datang di website resmi kelas <strong>X DKV II</strong>! Di sinilah semua kreativitas, kerja tim, dan semangat berkarya kami bersatu. Dari tugas-tugas desain penuh warna sampai momen seru di kelas, semua terangkum di sini. Yuk, jelajahi karya, kegiatan, dan cerita seru dari para pelajar berbakat yang nggak cuma jago gambar, tapi juga punya visi keren buat masa depan!
-  </p>
+  Selamat datang di website resmi kelas <strong>X DKV II</strong>! Di sinilah semua kreativitas, kerja tim, dan semangat berkarya kami bersatu. Dari tugas-tugas desain penuh warna sampai momen seru di kelas, semua terangkum di sini. Yuk, jelajahi karya, kegiatan, dan cerita seru dari para pelajar!</p>
+  <div class="container" style="height:350px">
+    <span style="display:flex;flex-direction:row;justify-content:space-between;">
+    <h2 class="subtitle">galeri kelas</h2>
+    <a href="gallery.html" style="color:#fff;">lihat lainnya</a>
+    </span>
+    <span class="gallery">
+      <span class="post">
+      <img src="gallery/photo1.png">
+      <h3>potret kelas X DKV II</h3>
+      <p>pemandangan kelas X DKV II saat membaca doa di pagi hari.</p>
+      </span>
+      <span class="post">
+      <img src="gallery/no-photo.png">
+      <h3>(belum ada konten)</h3>
+      <p>deskripsi akan diisi lain hari.</p>
+      </span>
+      <span class="post">
+      <img src="gallery/no-photo.png">
+      <h3>(belum ada konten)</h3>
+      <p>deskripsi akan diisi lain hari.</p>
+      </span>
+      <span class="post">
+      <img src="gallery/no-photo.png">
+      <h3>(belum ada konten)</h3>
+      <p>deskripsi akan diisi lain hari.</p>
+      </span>
+    </span>
   </div>
 	<div class="container">
 	  <h2 class="middle title" style="font-size:20pt">struktur kelas</h2>
@@ -99,15 +124,15 @@
 	
 	
   <script>
-  function filterItems() {
-    const input = document.getElementById('search').value.toLowerCase();
-    const items = document.querySelectorAll('#list li');
+    function filterItems() {
+      const input = document.getElementById('search').value.toLowerCase();
+      const items = document.querySelectorAll('#list li');
 
-    items.forEach(item => {
-      const text = item.textContent.toLowerCase();
+      items.forEach(item => {
+          const text = item.textContent.toLowerCase();
       item.style.display = text.includes(input) ? '' : 'none';
-    });
-  }
+      });
+    }
   </script>
 </body>
 </html>
