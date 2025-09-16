@@ -144,3 +144,7 @@ a.about-me {
 .gallery > span p {
   font-size: 12pt;
 }
+.toggle-btn {
+  color: #7ee;
+  font-size: 12pt;
+}
