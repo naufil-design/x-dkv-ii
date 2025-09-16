@@ -3,12 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="posts.js"></script>
+  <script src="main.gallery.js" defer></script>
   <title>galeri kelas</title>
   <style>
     body {
       background-color: #1f1f1f;
       color: #fff;
       padding-block:0;
+      margin: 0;
     }
     .container {
       display: flex;
@@ -19,8 +22,17 @@
       margin-top: 100%;
       text-align: center;
     }
-    .post {
+    @media (min-width: 768px) {
+      .post {
       flex: 1 1 45%;
+      }
+    }
+    @media (max-width: 600px) {
+      .post {
+      flex: 1 1 100%;
+      }
+    }
+    .post {
       width: 270px;
       height: 100%;
       border-radius: 10px;  
@@ -56,57 +68,8 @@
   </style>
 </head>
 <body>
-    <h1 style="position:sticky;top:0;background-color:#141414;padding-block:10px;margin-block:0">galeri kelas</h1>
+    <h1 style="position:sticky;top:0;background-image:linear-gradient(to bottom, #000000, #1666d400);padding-block:10px;padding-left:10px;margin-block:0">galeri kelas</h1>
     <div class="container">
-      <span class="post">
-        <a href="gallery/photo1.png">
-          <img src="gallery/photo1.png">
-        <h3>potret kelas X DKV II</h3>
-        <p>pemandangan kelas X DKV II saat membaca doa di pagi hari.</p>
-        </a>
-      </span>
-      <span class="post">
-        <a href="gallery/no-photo.png">
-          <img src="gallery/no-photo.png">
-        <h3>judul</h3>
-        <p>deskripsi akan diisi lain hari.</p>
-        </a>
-      </span>
-      <span class="post">
-        <a href="gallery/no-photo.png">
-          <img src="gallery/no-photo.png">
-        <h3>judul</h3>
-        <p>deskripsi akan diisi lain hari.</p>
-        </a>
-      </span>
-      <span class="post">
-        <a href="gallery/no-photo.png">
-          <img src="gallery/no-photo.png">
-        <h3>judul</h3>
-        <p>deskripsi akan diisi lain hari.</p>
-        </a>
-      </span>
-      <span class="post">
-        <a href="gallery/no-photo.png">
-          <img src="gallery/no-photo.png">
-        <h3>judul</h3>
-        <p>deskripsi akan diisi lain hari.</p>
-        </a>
-      </span>
-      <span class="post">
-        <a href="gallery/no-photo.png">
-          <img src="gallery/no-photo.png">
-        <h3>judul</h3>
-        <p>deskripsi akan diisi lain hari.</p>
-        </a>
-      </span>
-      <span class="post">
-        <a href="gallery/no-photo.png">
-          <img src="gallery/no-photo.png">
-        <h3>judul</h3>
-        <p>deskripsi akan diisi lain hari.</p>
-        </a>
-      </span>
     </div>
   <footer>website made by Naufil</footer>
 </body>
