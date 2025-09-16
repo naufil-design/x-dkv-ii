@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="logo.png" type="image/png">
   <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+  <script src="posts.js"></script>
   <script src="main.js" defer></script>
   <title>X DKV II - SMKN 7 Jember</title>
 </head>
@@ -18,30 +19,9 @@
   <div class="container" style="height:350px">
     <span style="display:flex;flex-direction:row;justify-content:space-between;">
     <h2 class="subtitle">galeri kelas</h2>
-    <a href="gallery.html" style="color:#fff;">lihat lainnya</a>
+    <a href="gallery.html" style="color:#fff;-webkit-tap-highlight-color: transparent;-webkit-focus-ring-color: transparent;outline: none;">lihat lainnya</a>
     </span>
-    <span class="gallery">
-      <span class="post">
-      <img src="gallery/photo1.png">
-      <h3>potret kelas X DKV II</h3>
-      <p>pemandangan kelas X DKV II saat membaca doa di pagi hari.</p>
-      </span>
-      <span class="post">
-      <img src="gallery/photo2.png">
-      <h3>pemenang lomba poster</h3>
-      <p>- Muhammad Naufil Efendi(pemenang kategori memorable terbaik)<br>- Nafiza Agustin(pemanang kategori karya asli terbaik)</p>
-      </span>
-      <span class="post">
-      <img src="gallery/no-photo.png">
-      <h3>(belum ada konten)</h3>
-      <p>deskripsi akan diisi lain hari.</p>
-      </span>
-      <span class="post">
-      <img src="gallery/no-photo.png">
-      <h3>(belum ada konten)</h3>
-      <p>deskripsi akan diisi lain hari.</p>
-      </span>
-    </span>
+    <span class="gallery"></span>
   </div>
 	<div class="container">
 	  <h2 class="middle title" style="font-size:20pt">struktur kelas</h2>
@@ -83,7 +63,7 @@
 	  </div>
 	</div>
 	<div class="container" style="position:relative;background-color:#111;">
-	  <p class="subtitle middle" style="margin-bottom:70px;font-size:13pt"><i class="icon ion-md-person"></i> daftar nama anggota kelas</i>
+	  <p class="subtitle middle" style="margin-bottom:70px;font-size:13pt"><i class="icon ion-md-person"></i> daftar nama anggota kelas</iSMANJA>
 	  <input type="text" id="search" placeholder="Cari nama..." oninput="filterItems()">
 
 <ul id="list">
@@ -121,18 +101,5 @@
 	</div>
 	<p class="middle" style="font-size:8pt;margin-top:10px">website ini dibuat oleh Naufil<br>tidak memakai software desain apapun, murni dicoding!</p>
 	
-	
-	
-  <script>
-    function filterItems() {
-      const input = document.getElementById('search').value.toLowerCase();
-      const items = document.querySelectorAll('#list li');
-
-      items.forEach(item => {
-          const text = item.textContent.toLowerCase();
-      item.style.display = text.includes(input) ? '' : 'none';
-      });
-    }
-  </script>
 </body>
 </html>
