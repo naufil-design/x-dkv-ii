@@ -1,5 +1,11 @@
 const posts = [
   {
+    img: "gallery/photo4.png",
+    title: "Maulid Nabi",
+    desc: "acara besar Maulid Nabi, berpakaian busana muslim.",
+    link: "gallery/photo4.png"
+  },
+  {
     img: "gallery/photo3.png",
     title: "mengikuti lomba mural",
     desc: "Muhammad Naufil Efendi direkrut untuk mengikuti lomba mural <i>SMANJA ART COMPETITION 2025</i>.",
