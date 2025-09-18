@@ -121,11 +121,15 @@ input:focus {
 a.about-me {
   display:none;
 }
+.gallery::-webkit-scrollbar {
+  display: none;
+}
 .gallery {
   display: flex;
   flex-direction: row;
   overflow-x: auto;
   gap: 10px;
+  scrollbar-width: none;
 }
 .gallery > span {
   flex: 1 2 100%;
